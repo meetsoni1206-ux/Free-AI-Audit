@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Soni - AI Automation Audit</title>
+  
+  <!-- Add Tailwind CSS and Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Theme Configuration matching your brand colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            'primary-violet': '#7B2FBE',
+            'deep-violet': '#5B21B6',
+            'mid-violet': '#C4B5FD',
+            'light-violet': '#EDE9FE',
+            'near-black': '#0F0F1A',
+            'deep-blue-glow': '#1E1B6E'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen relative overflow-hidden flex flex-col font-sans text-white bg-near-black">
+  
+  <!-- Atmospheric Background Gradients -->
+  <div class="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-deep-blue-glow rounded-full blur-[120px] opacity-40 pointer-events-none"></div>
+  <div class="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-primary-violet rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
+
+  <!-- Navigation -->
+  <header class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 py-8 flex justify-between items-center">
+    <div class="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+      Meet Soni
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="relative z-10 flex-1 flex flex-col justify-center px-6 lg:px-12 py-12 md:py-20 max-w-7xl mx-auto w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full">
+      
+      <!-- Left Column: Copy & Value Prop -->
+      <div class="col-span-1 lg:col-span-7 lg:pr-8">
+        <h1 class="text-5xl md:text-6xl font-bold leading-[1.1] mb-6 text-white text-balance">
+          Get your free AI <br class="hidden sm:block" />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-violet to-mid-violet">automation Audit</span> <br class="hidden sm:block" />
+          for your Business
+        </h1>
+        
+        <p class="text-lg text-light-violet/70 mb-10 max-w-lg">
+          A 10-minute diagnostic that evaluates your business's automation readiness across five dimensions.
+        </p>
+        
+        <div class="space-y-6">
+          <!-- Bullet Point 1 -->
+          <div class="flex items-start gap-4">
+            <div class="w-6 h-6 rounded-full bg-deep-violet flex items-center justify-center mt-1 shrink-0">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-white">Identify Bottlenecks</h3>
+              <p class="text-sm text-light-violet/60">Pinpoint where your business is losing money to manual work.</p>
+            </div>
+          </div>
+          <!-- Bullet Point 2 -->
+          <div class="flex items-start gap-4">
+            <div class="w-6 h-6 rounded-full bg-deep-violet flex items-center justify-center mt-1 shrink-0">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-white">Reclaim 20+ Hours</h3>
+              <p class="text-sm text-light-violet/60">Discover specific workflows where AI can save you 20+ hours/week.</p>
+            </div>
+          </div>
+          <!-- Bullet Point 3 -->
+          <div class="flex items-start gap-4">
+            <div class="w-6 h-6 rounded-full bg-deep-violet flex items-center justify-center mt-1 shrink-0">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-white">Actionable Roadmap</h3>
+              <p class="text-sm text-light-violet/60">Get a clear, tailored automation roadmap ready for implementation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side: Capture Form Card -->
+      <div class="col-span-1 lg:col-span-5 w-full max-w-md mx-auto">
+        <div class="bg-[#151522] border border-deep-violet rounded-2xl p-8 shadow-2xl backdrop-blur-sm relative overflow-hidden">
+          <div class="absolute top-0 right-0 p-4 opacity-10">
+            <!-- Decorative geometric icon -->
+            <svg class="w-24 h-24" viewBox="0 0 100 100" fill="currentColor"><path d="M10,10 L90,10 L90,90 L10,90 Z M20,20 L80,20 L80,80 L20,80 Z" opacity="0.5"></path></svg>
+          </div>
+          
+          <h2 class="text-2xl font-bold mb-2 relative z-10 text-white">Claim Your Audit</h2>
+          <p class="text-mid-violet text-sm mb-8 relative z-10 cursor-default">Enter your details below to receive your personalized document.</p>
+
+          <!-- Success State (Hidden by default) -->
+          <div id="success-screen" class="hidden bg-deep-violet/20 border border-primary-violet/30 rounded-xl p-6 text-center flex-col items-center gap-4 relative z-10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-full bg-primary-violet/20 flex items-center justify-center relative z-10">
+              <svg class="w-6 h-6 text-primary-violet" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+            </div>
+            <div class="relative z-10">
+              <h3 class="font-semibold text-white text-lg mb-1">Thank you for signing up.</h3>
+              <p class="text-light-violet/70 text-sm">Your audit will be sent to you via email.</p>
+            </div>
+          </div>
+
+          <!-- Input Form State -->
+          <form id="audit-form" class="space-y-4 relative z-10">
+            <div>
+              <label for="name" class="block text-xs uppercase font-bold text-light-violet/60 mb-1.5 ml-1">Your Name</label>
+              <input id="name" type="text" placeholder="John Doe" required
+                class="w-full bg-near-black border border-deep-violet rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-primary-violet transition-all placeholder:text-white/20" />
+            </div>
+            <div>
+              <label for="email" class="block text-xs uppercase font-bold text-light-violet/60 mb-1.5 ml-1">Work Email</label>
+              <input id="email" type="email" placeholder="john@company.com" required
+                class="w-full bg-near-black border border-deep-violet rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:ring-2 focus:ring-primary-violet transition-all placeholder:text-white/20" />
+            </div>
+            
+            <p id="error-message" class="text-red-400 text-sm hidden"></p>
+            
+            <button type="submit" id="submit-btn"
+              class="cursor-pointer w-full bg-primary-violet hover:bg-deep-violet text-white font-bold py-4 rounded-lg mt-4 shadow-lg shadow-primary-violet/20 transition-all active:scale-95 disabled:opacity-70 disabled:cursor-not-allowed group flex items-center justify-center gap-2 text-sm uppercase tracking-wider">
+              Get My Free Audit
+            </button>
+            <p class="text-[10px] text-center text-light-violet/40 mt-4 px-4 leading-relaxed">
+              By signing up, you agree to receive the audit and occasional insights on business automation. No spam, ever.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="relative z-10 border-t border-deep-violet/30 px-6 lg:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="flex gap-4 md:gap-8 text-[11px] text-light-violet/50 font-medium uppercase tracking-widest text-center">
+      <span>Systems Mapping</span>
+      <span class="hidden sm:inline">Workflow Audit</span>
+      <span class="hidden md:inline">AI Implementation</span>
+    </div>
+    <div class="text-[11px] text-light-violet/40 tracking-wider">
+      &copy; 2024 MEET SONI. ALL SYSTEMS OPTIMIZED.
+    </div>
+  </footer>
+
+  <!-- Firebase Integration Script -->
+  <script type="module">
+    // Direct CDN imports for Firebase Version 10
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+    // Your actual Firebase configuration linked to your new Firestore Database
+    const firebaseConfig = {
+      projectId: "gen-lang-client-0388253051",
+      appId: "1:981140987444:web:77791e9aa7c592af663461",
+      apiKey: "AIzaSyBeiYQW33nWDjbfkenvONZwoZnQhDAjgJ4",
+      authDomain: "gen-lang-client-0388253051.firebaseapp.com",
+      storageBucket: "gen-lang-client-0388253051.firebasestorage.app",
+      messagingSenderId: "981140987444"
+    };
+
+    // Initialize the DB
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app, "ai-studio-913cb129-e927-4346-b16e-3756e4308fb2");
+
+    // Grab elements
+    const form = document.getElementById('audit-form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const submitBtn = document.getElementById('submit-btn');
+    const successScreen = document.getElementById('success-screen');
+    const errorMessage = document.getElementById('error-message');
+
+    // Handle Submission
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const name = nameInput.value.trim();
+      const email = emailInput.value.trim();
+      
+      if (!name || !email) {
+        errorMessage.textContent = 'Please provide both name and email.';
+        errorMessage.classList.remove('hidden');
+        return;
+      }
+
+      errorMessage.classList.add('hidden');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting...';
+
+      try {
+        // Send data directly to your Firestore Database
+        await addDoc(collection(db, 'submissions'), {
+          name: name,
+          email: email,
+          createdAt: serverTimestamp(),
+        });
+        
+        // Show success visual state
+        form.classList.add('hidden');
+        successScreen.classList.remove('hidden');
+        successScreen.classList.add('flex');
+      } catch (error) {
+        console.error("Firebase error", error);
+        errorMessage.textContent = 'Something went wrong processing your request.';
+        errorMessage.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Get My Free Audit';
+      }
+    });
+  </script>
+</body>
+</html>
